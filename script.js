@@ -63,11 +63,11 @@ const CONTACT = {
  */
 const CERTIFICATE_DATABASE = [
     {
-        certNumber: "AICE-CBCA-2026-0001",
-        studentName: "Rahul Sharma",
+        certNumber: "AICE-CBCA-2026-9001",
+        studentName: "PRATYUSH KUMAR ROUTRAY",
         course: "Certificate in Basic Computer Applications (CBCA)",
         duration: "3 Months",
-        issueDate: "January 2026",
+        issueDate: "JULY 05 2026",
         status: "Valid"
     },
     {
