@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Ayush Institute of Computer Education (AICE) - Learn Today, Lead Tomorrow" />
+    <title>AICE - Ayush Institute of Computer Education</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <!-- ============================================================
+    LOADING SCREEN
+    ============================================================ -->
+    <div id="loader">
+        <div class="loader-spinner"></div>
+        <p class="loader-text">Loading...</p>
+    </div>
+
+    <!-- ============================================================
+    BACK TO TOP BUTTON
+    ============================================================ -->
+    <button id="backToTop" class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- ============================================================
+    STICKY NAVIGATION BAR
+    ============================================================ -->
+    <header class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+        <div class="container nav-container">
+            <!-- Logo -->
+            <a href="#home" class="nav-logo">
+                <img src="logo.jpeg" alt="AICE Logo" class="logo-img" />
+                <span class="logo-text">AICE</span>
+            </a>
+
+            <!-- Mobile Hamburger -->
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+
+            <!-- Navigation Links -->
+            <ul class="nav-menu" id="navMenu" role="menubar">
+                <li role="none"><a href="#home" role="menuitem" class="nav-link active">Home</a></li>
+                <li role="none"><a href="#about" role="menuitem" class="nav-link">About</a></li>
+                <li role="none"><a href="#courses" role="menuitem" class="nav-link">Courses</a></li>
+                <li role="none"><a href="#certificate" role="menuitem" class="nav-link">Certificate Verification</a></li>
+                <li role="none"><a href="#contact" role="menuitem" class="nav-link">Contact</a></li>
+            </ul>
+
+            <!-- Dark Mode Toggle -->
+            <button class="dark-mode-toggle" id="darkModeToggle" aria-label="Toggle dark mode">
+                <i class="fas fa-moon" id="darkModeIcon"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- ============================================================
+    HERO SECTION - CLEAN GRADIENT BACKGROUND
+    ============================================================ -->
+    <section class="hero" id="home">
+        <div class="hero-bg-gradient"></div>
+        <div class="container hero-container">
+            <div class="hero-content">
+                <span class="hero-badge">Welcome to AICE</span>
+                <h1 class="hero-title">
+                    <span class="hero-title-line">Ayush Institute of</span>
+                    <span class="hero-title-line highlight">Computer Education</span>
+                </h1>
+                <p class="hero-tagline">Learn Today, Lead Tomorrow</p>
+                <p class="hero-description">
+                    Empowering students with industry-relevant computer skills 
+                    and practical knowledge for a successful career in technology.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#courses" class="btn btn-primary">
+                        <i class="fas fa-rocket"></i> Explore Courses
+                    </a>
+                    <a href="#about" class="btn btn-outline">
+                        <i class="fas fa-info-circle"></i> Learn More
+                    </a>
+                </div>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number" data-target="500">0</span>
+                    <span class="stat-label">Students Trained</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="10">0</span>
+                    <span class="stat-label">Courses</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="98">0</span>
+                    <span class="stat-label">% Satisfaction</span>
+                </div>
+            </div>
+        </div>
+        <!-- Animated background shapes -->
+        <div class="hero-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+        </div>
+        <!-- Floating particles -->
+        <div class="particles">
+            <span class="particle"></span>
+            <span class="particle"></span>
+            <span class="particle"></span>
+            <span class="particle"></span>
+            <span class="particle"></span>
+            <span class="particle"></span>
+            <span class="particle"></span>
+            <span class="particle"></span>
+        </div>
+    </section>
+
+    <!-- ============================================================
+    ABOUT AICE SECTION
+    ============================================================ -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">About Us</span>
+                <h2 class="section-title">Know About <span class="highlight">AICE</span></h2>
+                <div class="section-divider"></div>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-content">
+                    <h3 class="about-heading">Ayush Institute of Computer Education</h3>
+                    <p class="about-text">
+                        AICE is a premier computer education institute dedicated to providing 
+                        high-quality, practical, and industry-oriented training to students. 
+                        Our mission is to bridge the gap between academic learning and real-world 
+                        technology demands.
+                    </p>
+                    <p class="about-text">
+                        With a strong focus on hands-on learning and personalized mentorship, 
+                        we prepare our students to excel in the ever-evolving field of technology.
+                    </p>
+                    
+                    <div class="about-mission-vision">
+                        <div class="mv-card">
+                            <div class="mv-icon"><i class="fas fa-bullseye"></i></div>
+                            <h4>Our Mission</h4>
+                            <p>To empower individuals with cutting-edge computer skills and foster a culture of innovation and lifelong learning.</p>
+                        </div>
+                        <div class="mv-card">
+                            <div class="mv-icon"><i class="fas fa-eye"></i></div>
+                            <h4>Our Vision</h4>
+                            <p>To become a globally recognized institute that produces skilled, ethical, and forward-thinking technology professionals.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-why">
+                    <h3 class="about-heading">Why Choose AICE?</h3>
+                    <ul class="why-list">
+                        <li><i class="fas fa-check-circle"></i> Industry-relevant curriculum</li>
+                        <li><i class="fas fa-check-circle"></i> Experienced and supportive faculty</li>
+                        <li><i class="fas fa-check-circle"></i> Hands-on practical training</li>
+                        <li><i class="fas fa-check-circle"></i> Affordable fee structure</li>
+                        <li><i class="fas fa-check-circle"></i> Certificate of completion</li>
+                        <li><i class="fas fa-check-circle"></i> Career guidance and support</li>
+                        <li><i class="fas fa-check-circle"></i> Modern infrastructure</li>
+                        <li><i class="fas fa-check-circle"></i> Flexible batch timings</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+    FOUNDER SECTION
+    ============================================================ -->
+    <section class="founder" id="founder">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Leadership</span>
+                <h2 class="section-title">Meet Our <span class="highlight">Founder</span></h2>
+                <div class="section-divider"></div>
+            </div>
+
+            <div class="founder-card glass-card">
+                <div class="founder-image">
+                    <img src="ayush.jpeg" alt="Ayush Kumar Routray - Founder & Director of AICE" />
+                </div>
+                <div class="founder-info">
+                    <h3 class="founder-name">Ayush Kumar Routray</h3>
+                    <p class="founder-title">Founder &amp; Director</p>
+                    <p class="founder-description">
+                        Ayush Kumar Routray is a visionary educator and technology enthusiast 
+                        with a deep passion for empowering the next generation of tech professionals. 
+                        With years of experience in the IT industry and education sector, he founded 
+                        AICE with the mission to make quality computer education accessible and 
+                        practical for everyone.
+                    </p>
+                    <p class="founder-description">
+                        Under his leadership, AICE has grown into a trusted institution known for 
+                        its innovative teaching methods, student-centric approach, and commitment 
+                        to excellence. He continues to inspire students to dream big and achieve 
+                        their goals.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+    COURSES SECTION - 3 COURSES
+    ============================================================ -->
+    <section class="courses" id="courses">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Our Courses</span>
+                <h2 class="section-title">Featured <span class="highlight">Courses</span></h2>
+                <div class="section-divider"></div>
+            </div>
+
+            <!-- Course 1: Basic Computer Applications -->
+            <div class="course-card glass-card">
+                <div class="course-badge">Popular</div>
+                <div class="course-icon"><i class="fas fa-laptop"></i></div>
+                <h3 class="course-name">Basic Computer Applications</h3>
+                <p class="course-code">CBCA</p>
+                
+                <div class="course-modules">
+                    <h4>Course Modules</h4>
+                    <div class="modules-grid">
+                        <span class="module-tag"><i class="fas fa-desktop"></i> Computer Fundamentals</span>
+                        <span class="module-tag"><i class="fas fa-windows"></i> Windows Basics</span>
+                        <span class="module-tag"><i class="fas fa-globe"></i> Internet &amp; Email</span>
+                        <span class="module-tag"><i class="fas fa-file-word"></i> Microsoft Word</span>
+                        <span class="module-tag"><i class="fas fa-file-powerpoint"></i> Microsoft PowerPoint</span>
+                        <span class="module-tag"><i class="fab fa-html5"></i> HTML</span>
+                        <span class="module-tag"><i class="fas fa-paint-brush"></i> Canva</span>
+                        <span class="module-tag"><i class="fas fa-mobile-alt"></i> Basic Digital Skills</span>
+                    </div>
+                </div>
+
+                <div class="course-details">
+                    <div class="course-detail-item">
+                        <i class="fas fa-clock"></i>
+                        <span><strong>Duration:</strong> 1 Months</span>
+                    </div>
+                    <div class="course-detail-item">
+                        <i class="fas fa-user-graduate"></i>
+                        <span><strong>Eligibility:</strong> ALL TYPE OF STUDENT AFTER COMPLETE 10TH</span>
+                    </div>
+                    <div class="course-detail-item">
+                        <i class="fas fa-rupee-sign"></i>
+                        <span>
+                            <strong>Course Fee:</strong> 
+                            <span class="original-price">₹1,999/-</span>
+                            <span class="discounted-price">₹199/- only</span>
+                        </span>
+                    </div>
+                </div>
+
+                <a href="#" class="btn btn-primary enroll-btn" data-course="Basic Computer Applications">
+                    <i class="fas fa-arrow-right"></i> Enroll Now
+                </a>
+            </div>
+
+            <!-- Course 2: Basic Python -->
+            <div class="course-card glass-card">
+                <div class="course-badge">New</div>
+                <div class="course-icon"><i class="fab fa-python"></i></div>
+                <h3 class="course-name">Basic Python Programming</h3>
+                <p class="course-code">CBPP</p>
+                
+                <div class="course-modules">
+                    <h4>Course Modules</h4>
+                    <div class="modules-grid">
+                        <span class="module-tag"><i class="fas fa-code"></i> Python Basics</span>
+                        <span class="module-tag"><i class="fas fa-calculator"></i> Variables &amp; Data Types</span>
+                        <span class="module-tag"><i class="fas fa-sitemap"></i> Control Flow (if, loops)</span>
+                        <span class="module-tag"><i class="fas fa-list"></i> Lists &amp; Tuples</span>
+                        <span class="module-tag"><i class="fas fa-book"></i> Dictionaries &amp; Sets</span>
+                        <span class="module-tag"><i class="fas fa-tasks"></i> Functions &amp; Modules</span>
+                        <span class="module-tag"><i class="fas fa-file-code"></i> File Handling</span>
+                        <span class="module-tag"><i class="fas fa-bug"></i> Error Handling</span>
+                        <span class="module-tag"><i class="fas fa-project-diagram"></i> Mini Projects</span>
+                    </div>
+                </div>
+
+                <div class="course-details">
+                    <div class="course-detail-item">
+                        <i class="fas fa-clock"></i>
+                        <span><strong>Duration:</strong> 2 Months</span>
+                    </div>
+                    <div class="course-detail-item">
+                        <i class="fas fa-user-graduate"></i>
+                        <span><strong>Eligibility:</strong> ALL TYPE OF STUDENT AFTER COMPLETE +2</span>
+                    </div>
+                    <div class="course-detail-item">
+                        <i class="fas fa-rupee-sign"></i>
+                        <span>
+                            <strong>Course Fee:</strong> 
+                            <span class="original-price">₹2,999/-</span>
+                            <span class="discounted-price">₹999/- only</span>
+                        </span>
+                    </div>
+                </div>
+
+                <a href="#" class="btn btn-primary enroll-btn" data-course="Basic Python Programming">
+                    <i class="fas fa-arrow-right"></i> Enroll Now
+                </a>
+            </div>
+
+            <!-- Course 3: Basic AI & ML -->
+            <div class="course-card glass-card">
+                <div class="course-badge">Advanced</div>
+                <div class="course-icon"><i class="fas fa-robot"></i></div>
+                <h3 class="course-name">Basic AI &amp; Machine Learning</h3>
+                <p class="course-code">CBAM</p>
+                
+                <div class="course-modules">
+                    <h4>Course Modules</h4>
+                    <div class="modules-grid">
+                        <span class="module-tag"><i class="fas fa-brain"></i> Introduction to AI</span>
+                        <span class="module-tag"><i class="fas fa-chart-line"></i> Data Science Basics</span>
+                        <span class="module-tag"><i class="fas fa-database"></i> Data Preprocessing</span>
+                        <span class="module-tag"><i class="fas fa-code-branch"></i> Machine Learning Basics</span>
+                        <span class="module-tag"><i class="fas fa-robot"></i> Supervised Learning</span>
+                        <span class="module-tag"><i class="fas fa-robot"></i> Unsupervised Learning</span>
+                        <span class="module-tag"><i class="fas fa-neural"></i> Neural Networks Introduction</span>
+                        <span class="module-tag"><i class="fas fa-chevron-circle-right"></i> Project: AI Model</span>
+                        <span class="module-tag"><i class="fas fa-certificate"></i> Career in AI/ML</span>
+                    </div>
+                </div>
+
+                <div class="course-details">
+                    <div class="course-detail-item">
+                        <i class="fas fa-clock"></i>
+                        <span><strong>Duration:</strong> 2 Months</span>
+                    </div>
+                    <div class="course-detail-item">
+                        <i class="fas fa-user-graduate"></i>
+                        <span><strong>Eligibility:</strong> ALL TYPE OF STUDENT AFTER COMPLETE +2</span>
+                    </div>
+                    <div class="course-detail-item">
+                        <i class="fas fa-rupee-sign"></i>
+                        <span>
+                            <strong>Course Fee:</strong> 
+                            <span class="original-price">₹1,999/-</span>
+                            <span class="discounted-price">₹999/- only</span>
+                        </span>
+                    </div>
+                </div>
+
+                <a href="#" class="btn btn-primary enroll-btn" data-course="Basic AI & Machine Learning">
+                    <i class="fas fa-arrow-right"></i> Enroll Now
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ============================================================
+    TESTIMONIALS SECTION
+    ============================================================ -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Testimonials</span>
+                <h2 class="section-title">What Our <span class="highlight">Students Say</span></h2>
+                <div class="section-divider"></div>
+            </div>
+
+            <div class="testimonials-grid">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card glass-card">
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar">
+                            <span>RR</span>
+                        </div>
+                        <div class="testimonial-user">
+                            <h4>Rahul Sharma</h4>
+                            <p>BCA Student</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">
+                        "AICE transformed my career. The practical training and supportive faculty 
+                        helped me gain confidence in using computers. I now work as a computer operator 
+                        in a reputed company."
+                    </p>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card glass-card">
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar">
+                            <span>PM</span>
+                        </div>
+                        <div class="testimonial-user">
+                            <h4>Priya Mishra</h4>
+                            <p>BPY Student</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">
+                        "The Python course at AICE was amazing! I learned coding from scratch and 
+                        now I'm building my own projects. The faculty is very supportive and 
+                        knowledgeable."
+                    </p>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="testimonial-card glass-card">
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar">
+                            <span>AK</span>
+                        </div>
+                        <div class="testimonial-user">
+                            <h4>Amit Kumar</h4>
+                            <p>AIML Student</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">
+                        "The AI & ML course opened my eyes to the future of technology. 
+                        The hands-on projects and real-world applications made learning 
+                        so much fun and practical."
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+    CERTIFICATE VERIFICATION SECTION
+    ============================================================ -->
+    <section class="certificate" id="certificate">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Verification</span>
+                <h2 class="section-title">Certificate <span class="highlight">Verification</span></h2>
+                <div class="section-divider"></div>
+            </div>
+
+            <div class="certificate-card glass-card">
+                <p class="certificate-desc">
+                    Enter your certificate number below to verify its authenticity.
+                </p>
+                <p class="certificate-example">
+                    <i class="fas fa-info-circle"></i> Example: AICE-CBCA-2026-0001
+                </p>
+
+                <form class="certificate-form" id="certificateForm">
+                    <div class="form-group">
+                        <input 
+                            type="text" 
+                            id="certNumber" 
+                            class="cert-input" 
+                            placeholder="Enter Certificate Number" 
+                            required
+                            pattern="[A-Z]{4}-[A-Z]{4}-\d{4}-\d{4}"
+                            title="Format: AICE-CBCA-2026-0001"
+                        />
+                        <button type="submit" class="btn btn-primary cert-btn">
+                            <i class="fas fa-search"></i> Verify
+                        </button>
+                    </div>
+                </form>
+
+                <div class="cert-result" id="certResult">
+                    <!-- Results will be displayed here dynamically -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+    CONTACT SECTION
+    ============================================================ -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Contact</span>
+                <h2 class="section-title">Get In <span class="highlight">Touch</span></h2>
+                <div class="section-divider"></div>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-phone-alt"></i></div>
+                        <div>
+                            <h4>Phone</h4>
+                            <p><a href="tel:+916371004033">+91 63710 04033</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                        <div>
+                            <h4>Email</h4>
+                            <p><a href="mailto:aice.learning.edu@gmail.com">aice.learning.edu@gmail.com</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fab fa-whatsapp"></i></div>
+                        <div>
+                            <h4>WhatsApp</h4>
+                            <p><a href="https://wa.me/916371004033" target="_blank">Chat with us</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-user-graduate"></i></div>
+                        <div>
+                            <h4>About Founder</h4>
+                            <p>B.Tech Computer Science & Engineering Student</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+    FOOTER
+    ============================================================ -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Brand -->
+                <div class="footer-brand">
+                    <img src="logo.jpeg" alt="AICE Logo" class="footer-logo" />
+                    <h3>Ayush Institute of Computer Education</h3>
+                    <p>Learn Today, Lead Tomorrow</p>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#courses">Courses</a></li>
+                        <li><a href="#certificate">Certificate Verification</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Courses -->
+                <div class="footer-links">
+                    <h4>Our Courses</h4>
+                    <ul>
+                        <li><a href="#courses">Basic Computer Applications</a></li>
+                        <li><a href="#courses">Basic Python Programming</a></li>
+                        <li><a href="#courses">Basic AI &amp; ML</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact -->
+                <div class="footer-contact">
+                    <h4>Contact Info</h4>
+                    <p><i class="fas fa-phone-alt"></i> +91 63710 04033</p>
+                    <p><i class="fas fa-envelope"></i> aice.learning.edu@gmail.com</p>
+                    <p><i class="fas fa-user-graduate"></i> B.Tech CSE Student</p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Ayush Institute of Computer Education. All Rights Reserved.</p>
+                <p class="footer-dev">Designed with <i class="fas fa-heart"></i> by Ayush Kumar Routray</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ============================================================
+    SCRIPTS
+    ============================================================ -->
+    <script src="script.js"></script>
+</body>
+</html>
