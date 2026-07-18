@@ -71,11 +71,11 @@ const CERTIFICATE_DATABASE = [
         status: "Valid"
     },
     {
-        certNumber: "AICE-CBCA-2026-0002",
-        studentName: "Priya Mishra",
+        certNumber: "AICE-CBCA-2026-9002",
+        studentName: "Laxmipriya Baliarsingh",
         course: "Certificate in Basic Computer Applications (CBCA)",
         duration: "3 Months",
-        issueDate: "January 2026",
+        issueDate: "July 18 2026",
         status: "Valid"
     },
     {
